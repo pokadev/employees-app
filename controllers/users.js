@@ -1,5 +1,5 @@
 const { prisma } = require("@prisma/client");
-const { genSalt , hash} = require("bcrypt");
+const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 
 const login = async (req, res, next) => {
